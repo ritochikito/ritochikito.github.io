@@ -39,11 +39,12 @@ a {
   color: #ffffff;
   background-color: #30b7ee;
   font-size: 125%;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
   a {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 
@@ -124,6 +125,8 @@ p {
   border-radius: 10px;
   background-color: #f5f5dc;
   word-break: break-word;
+  overflow: hidden;
+  font-size: 20px;
 }
 
 .Letter h2,
@@ -163,6 +166,7 @@ p {
 .galeria img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 @media (min-width: 600px) {
