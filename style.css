@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #6ad2f5;
+}
+
+div {
+  color: #ffffff;
+}
+
+.nav-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  height: 40px;
+  width: 75%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #30b7ee;
+  font-size: 125%;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    font-size: 80%;
+  }
+}
+
+a:hover {
+  background-color: #016cbe;
+  transition-duration: 0.5s;
+}
+
+.main-container {
+  min-width: -webkit-fill-available;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  height: 40vh;
+  overflow: hidden;
+  background-color: #30b7ee;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Home {
+    margin-left: 0;
+    margin-right: 0;
+    height: 20vh;
+  }
+}
+
+.text {
+  margin-left: 1vh;
+  align-self: center;
+  color: #000;
+  width: 70vw;
+  word-break: break-word;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 50%;
+  }
+}
+
+.imagen {
+  display: flex;
+  justify-content: end;
+  margin-right: 3vh;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+}
+
+.imagen img {
+  border-radius: 10px;
+  width: 65%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .imagen img {
+    border-radius: 10px;
+    width: 85%;
+    height: auto;
+  }
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  word-break: break-word;
+}
+
+.Letter h2,
+.Fotos h2,
+.Story h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.Letter,
+.Fotos,
+.Story {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.Story {
+  margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .Story {
+    margin-bottom: 10vw;
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  background-color: #30b7ee;
+  border-radius: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .galeria {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(33.33%, 1fr)
+    ); /* 2 fotos por línea */
+    /* Para 3 fotos por línea, puedes cambiar a minmax(33.33%, 1fr) */
+  }
+}
